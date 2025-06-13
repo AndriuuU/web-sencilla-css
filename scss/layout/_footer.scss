@@ -1,0 +1,29 @@
+@use '../base/variables';
+
+.footer {
+    background: variables.$secondary-color;
+    color: variables.$primary-color;
+    text-align: center;
+    padding: 2rem 1rem;
+
+    &__title {
+        margin: 1rem 0 0.5rem 0;
+        color: variables.$secondary-color-dark
+    }
+
+    &__copyright,
+    &__phone,
+    &__email {
+        color: variables.$primary-color;
+    }
+
+    &__link {
+        color: variables.$primary-color;
+        transition: color 0.2s;
+
+        &:hover {
+            color: variables.$text-color-dark;
+        }
+    }
+
+}

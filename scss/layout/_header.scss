@@ -1,0 +1,61 @@
+@use '../base/variables';
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: variables.$primary-color;
+    padding: 0 1rem;
+    height: 60px;
+
+    &__logo img {
+        height: 2rem
+    }
+
+    &__menu {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        margin: 0;
+    }
+
+    &__link {
+        color: variables.$secondary-color;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: color 0.3s, font-size 0.3s;
+
+    }
+
+    &__link:hover {
+        color: variables.$text-color-secondary;
+        transition: color 0.3s, font-size 0.3s;
+        font-size: 1.7rem;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__icon svg {
+         height: 1.5rem;
+  color: #063636;
+  transition: color 0.3s, transform 0.3s;
+    }
+
+    &__icon svg:hover {
+        color: #e71515;
+  transform: scale(1.13);
+    }
+}

@@ -1,0 +1,13 @@
+
+// Bases generales del sitio
+@use 'base/variables';
+@use "base/typography";
+@use "base/base";
+
+// Layouts del sitio
+@use "layout/header";
+@use "layout/footer";
+
+// Pages del sitio
+@use "pages/home";
+@use "pages/producto";

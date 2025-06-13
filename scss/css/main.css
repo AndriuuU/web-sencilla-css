@@ -1,0 +1,11 @@
+/* Colores basicos modo claro */
+/* Colores basicos modo oscuro */
+/* Bordes */
+@font-face {
+  font-family: "Open Sans";
+  src: url("/scss/assets/NuevoLithoLight.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=main.css.map */
