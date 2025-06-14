@@ -1,13 +1,27 @@
+//Abstracts
+@use 'abstracts/mixins';
+@use 'abstracts/variables';
+@use 'abstracts/functions';
 
-// Bases generales del sitio
-@use 'base/variables';
-@use "base/typography";
-@use "base/base";
+// Base
+@use 'base/typography';
+@use 'base/base';
 
-// Layouts del sitio
-@use "layout/header";
-@use "layout/footer";
+// Layout
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/sidebar';
+@use 'layout/navigation';
 
-// Pages del sitio
-@use "pages/home";
-@use "pages/producto";
+// Components
+@use 'components/button';
+@use 'components/card';
+@use 'components/navbar';
+
+//Pages
+@use 'pages/home';
+@use 'pages/product';
+
+// Themes
+@use 'themes/theme-light';
+@use 'themes/theme-dark';

@@ -1,0 +1,21 @@
+@use '../abstracts/variables';
+
+.theme-toggle {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 
+    background 0.2s, 
+    color 0.2s, 
+    transform 0.2s;
+
+  &:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.07);
+  }
+}

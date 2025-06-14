@@ -1,0 +1,9 @@
+@use '../abstracts/variables';
+
+body.dark {
+  --primary-color: #{variables.$primary-color-dark};
+  --secondary-color: #{variables.$secondary-color-dark};
+  --background-color: #{variables.$background-color-dark};
+  --text-color: #{variables.$text-color-dark};
+  --text-color-secondary: #{variables.$text-color-secondary-dark};
+}
