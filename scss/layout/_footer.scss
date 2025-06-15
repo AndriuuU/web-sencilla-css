@@ -1,28 +1,28 @@
 @use '../abstracts/variables';
 
 .footer {
-    background: variables.$secondary-color;
-    color: variables.$primary-color;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 2rem 1rem;
 
     &__title {
         margin: 1rem 0 0.5rem 0;
-        color: variables.$secondary-color-dark
+        color: var(--secondary-color)
     }
 
     &__copyright,
     &__phone,
     &__email {
-        color: variables.$primary-color;
+        color: var(--secondary-color);
     }
 
     &__link {
-        color: variables.$primary-color;
+        color: var(--secondary-color);
         transition: color 0.2s;
 
         &:hover {
-            color: variables.$text-color-dark;
+            color: var(--secondary-color);
         }
     }
 

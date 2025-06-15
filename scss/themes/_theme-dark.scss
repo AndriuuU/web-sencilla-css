@@ -6,4 +6,6 @@ body.dark {
   --background-color: #{variables.$background-color-dark};
   --text-color: #{variables.$text-color-dark};
   --text-color-secondary: #{variables.$text-color-secondary-dark};
+  --border-color: #{variables.$border-color-dark};
+  --accent-color: #{variables.$accent-color-dark};
 }

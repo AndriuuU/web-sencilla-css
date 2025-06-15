@@ -1,0 +1,10 @@
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+body:not(.dark) .icon-moon { display: inline; }
+body:not(.dark) .icon-sun { display: none; }
+body.dark .icon-moon { display: none; }
+body.dark .icon-sun { display: inline; }

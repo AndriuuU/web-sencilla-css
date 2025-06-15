@@ -7,6 +7,8 @@ function getUserTheme() {
 
 function applyTheme(isDark) {
   document.body.classList.toggle('dark', isDark);
+    updateLogo(isDark);
+
 }
 
 function initTheme() {
@@ -22,6 +24,13 @@ function toggleTheme() {
   const isDark = !document.body.classList.contains('dark');
   applyTheme(isDark);
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
+}
+function updateLogo(isDark) {
+  const logo = document.getElementById('logo');
+  if (!logo) return;
+  logo.src = isDark
+    ? 'scss/assets/images/logo-horizontal-dark.png'
+    : 'scss/assets/images/logo-horizontal.png';
 }
 
 document.addEventListener('DOMContentLoaded', () => {

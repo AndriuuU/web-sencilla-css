@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio</title>
   <link rel="stylesheet" href="../css/main.css">
-  <script  rel="stylesheet" href="../js/darkmode.js"></script>
+  <script src="js/darkmode.js"></script>
 </head>
 
 <body>
   <nav class="navbar">
     <a href="#" class="navbar__logo">
-      <img src="scss/assets/images/logo-horizontal.png" alt="Logo" />
+      <img id="logo" src="scss/assets/images/logo-horizontal.png" alt="Logo" />
     </a>
     <ul class="navbar__menu">
       <li class="navbar__item">
@@ -21,10 +21,13 @@
       </li>
     </ul>
     <ul class="navbar__icons">
-      <button id="toggle-darkmode" class= "theme-toggle" alt="Alternar modo oscuro">🌙/☀️</button>
+      <button id="toggle-darkmode" class="theme-toggle" aria-label="Alternar modo oscuro">
+        <span class="icon-moon">🌙</span>
+        <span class="icon-sun">☀️</span>
+      </button>
       <li>
         <a href="#" class="navbar__icon">
-          <svg width="20" viewBox="0 0 203 203" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" viewBox="0 0 203 203" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M171.625 195C179.371 195 185.65 188.72 185.65 180.975C185.65 173.229 179.371 166.95 171.625 166.95C163.88 166.95 157.6 173.229 157.6 180.975C157.6 188.72 163.88 195 171.625 195Z"
               fill="black" stroke="black" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
@@ -42,7 +45,7 @@
       </li>
       <li>
         <a href="#" class="navbar__icon">
-          <svg width="20" viewBox="0 0 179 203" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" viewBox="0 0 179 203" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M8 194.583V182.922C8 137.838 44.547 101.292 89.63 101.292C134.713 101.292 171.26 137.838 171.26 182.922V194.583"
               stroke="black" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
