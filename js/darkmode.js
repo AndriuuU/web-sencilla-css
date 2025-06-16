@@ -8,7 +8,6 @@ function getUserTheme() {
 function applyTheme(isDark) {
   document.body.classList.toggle('dark', isDark);
     updateLogo(isDark);
-
 }
 
 function initTheme() {
@@ -39,5 +38,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
     if (!getUserTheme()) applyTheme(e.matches);
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.navbar__toggle');
+  const menu = document.querySelector('.navbar__menu');
+  const icons = document.querySelector('.navbar__icons');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    icons.classList.toggle('active');
+    toggle.setAttribute('aria-expanded', menu.classList.contains('active'));
   });
 });

@@ -14,10 +14,12 @@
     <a href="#" class="navbar__logo">
       <img id="logo" src="scss/assets/images/logo-horizontal.png" alt="Logo" />
     </a>
+    <button class="navbar__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
     <ul class="navbar__menu">
       <li class="navbar__item">
         <a href="inicio.html" class="navbar__link">Inicio</a>
-
+        <a href="producto.html" class="navbar__link">Producto</a>
+        <a href="inicio.html" class="navbar__link">Contacto</a>
       </li>
     </ul>
     <ul class="navbar__icons">
@@ -40,7 +42,6 @@
               d="M176.3 129.55H54.7499H38.2076C21.5243 129.55 12.6749 136.854 12.6749 148.25C12.6749 159.646 21.5243 166.95 38.2076 166.95H171.625"
               stroke="black" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-
         </a>
       </li>
       <li>
@@ -58,9 +59,38 @@
     </ul>
   </nav>
 
-
-  <h1>Welcome to the Home Page</h1>
-  <p>This is a simple HTML page.</p>
+  <main class="home">
+    <section class="home__hero">
+      <img class="home__hero-image" src="scss/assets/images/dog_PNG.png" alt="Portada Petmail">
+      <h1 class="home__hero-title">¡Bienvenido a Petmail!</h1>
+      <p class="home__hero-subtitle">Encuentra los mejores productos para tus mascotas de forma fácil y rápida.</p>
+    </section>
+    <section class="products">
+      <h2 class="products__title">Nuestros Productos Destacados</h2>
+      <div class="products__list">
+        <a href="producto.html?id=1" class="product-card">
+          <img class="product-card__image" src="scss/assets/images/mediumImage.png" alt="Comida para perro">
+          <h3 class="product-card__title">Comodida premium para perros</h3>
+          <p class="product-card__description">Nutrición completa para gatos exigentes.</p>
+        </a>
+        <a href="producto.html?id=2" class="product-card">
+          <img class="product-card__image" src="scss/assets/images/dog_collar_PNG.png" alt="Collar para perro">
+          <h3 class="product-card__title">Collar premium perros</h3>
+          <p class="product-card__description">Nutrición completa para gatos exigentes.</p>
+        </a>
+        <a href="producto.html?id=3" class="product-card">
+          <img class="product-card__image" src="scss/assets/images/Comida_Gato.png" alt="Cama suave para mascotas">
+          <h3 class="product-card__title">Cama suave para mascotas</h3>
+          <p class="product-card__description">Comodidad y descanso asegurados todo el año.</p>
+        </a>
+        <a href="producto.html?id=3" class="product-card">
+          <img class="product-card__image" src="scss/assets/images/producto.jpg" alt="Cama suave para mascotas">
+          <h3 class="product-card__title">Cama suave para mascotas</h3>
+          <p class="product-card__description">Comodidad y descanso asegurados todo el año.</p>
+        </a>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <p class="footer__copyright">&copy; 2025 Petmail. Todos los derechos reservados.</p>
