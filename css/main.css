@@ -135,6 +135,9 @@ body.dark .icon-sun {
   color: var(--secondary-color);
   text-align: center;
   padding: 2rem 1rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 .footer__title {
   margin: 1rem 0 0.5rem 0;
@@ -244,6 +247,56 @@ body.dark .icon-sun {
   color: var(--text-color-secondary);
   font-size: 1.1rem;
   margin-bottom: 0;
+}
+
+.producto {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: var(--primary-color);
+}
+.producto__imagen {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 1rem auto;
+  border-radius: 8px;
+}
+.producto__titulo {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.producto__descripcion {
+  color: var(--text-color-secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.producto__caracteristicas {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  padding-left: 1.2em;
+  font-size: 1rem;
+  line-height: 1.6;
+  list-style: disc inside;
+}
+.producto__caracteristicas li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+.producto__precio {
+  display: block;
+  text-align: center;
+  background: #063636;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  padding: 0.4rem 1.2rem;
+  margin: 1rem auto 0 auto;
+  width: fit-content;
 }
 
 :root {

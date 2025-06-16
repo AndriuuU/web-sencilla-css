@@ -1,0 +1,55 @@
+.producto {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--primary-color);
+
+    &__imagen {
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto 1rem auto;
+        border-radius: 8px;
+    }
+
+    &__titulo {
+        font-size: 1.5rem;
+        color: var(--secondary-color);
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    &__descripcion {
+        color: var(--text-color-secondary);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__caracteristicas {
+        margin-bottom: 1rem;
+        color: var(--secondary-color);
+        padding-left: 1.2em;
+        font-size: 1rem;
+        line-height: 1.6;
+        list-style: disc inside;
+    }
+
+    &__caracteristicas li {
+        position: relative;
+        padding-left: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    &__precio {
+        display: block;
+        text-align: center;
+        background: #063636;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        padding: 0.4rem 1.2rem;
+        margin: 1rem auto 0 auto;
+        width: fit-content;
+    }
+}
